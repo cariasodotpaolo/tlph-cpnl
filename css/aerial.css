@@ -1,0 +1,12 @@
+#aerial-container {
+    background: rgba(0,0,0,0.6);
+    width: 1100px;
+    margin:0 auto;
+}
+
+#aerial-content {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    max-height: 1280px;
+    overflow-y: scroll;
+}

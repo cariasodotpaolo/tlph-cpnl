@@ -1,0 +1,27 @@
+.news-item{
+    padding-top: 10px;
+   /* border-top: ridge;*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#inner-carousel {
+    height: 300px;
+}
+
+/*.carousel-inner {
+    background: rgba(0,0,0,0.2);
+}*/
+
+/*
+.carousel-inner > .item > a > img {
+    margin: 0 auto;
+}*/
+
+#video-link {
+    margin: 0 auto;
+}
+
+#video-image {
+    margin: 0 auto;
+}

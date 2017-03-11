@@ -1,0 +1,12 @@
+#banner-content {
+    /*width: 100%;*/
+    /*width: 100vw;*/
+    width: 1100px;
+    height: inherit;
+    text-align: center; /*aligns video*/
+    margin: 0 auto;
+}
+
+#banner-image {
+    margin: 0 auto;
+}

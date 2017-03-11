@@ -1,0 +1,7 @@
+[04-Jan-2017 12:55:26 UTC] PHP Warning:  file_get_contents(/home/paolocariaso/public_html/data/video-newsfeed.json): failed to open stream: No such file or directory in /home/mpcariaso/public_html/TimelapsePH/php/news-feed.php on line 32
+[04-Jan-2017 12:55:26 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/mpcariaso/public_html/TimelapsePH/php/news-feed.php on line 35
+[04-Jan-2017 12:55:36 UTC] PHP Warning:  file_get_contents(/home/paolocariaso/public_html/data/video-newsfeed.json): failed to open stream: No such file or directory in /home/mpcariaso/public_html/TimelapsePH/php/news-feed.php on line 32
+[04-Jan-2017 12:55:36 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/mpcariaso/public_html/TimelapsePH/php/news-feed.php on line 35
+[04-Jan-2017 12:57:22 UTC] PHP Warning:  file_get_contents(/home/paolocariaso/public_html/data/video-newsfeed.json): failed to open stream: No such file or directory in /home/mpcariaso/public_html/php/news-feed.php on line 32
+[04-Jan-2017 12:57:22 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/mpcariaso/public_html/php/news-feed.php on line 35
+[04-Jan-2017 13:16:37 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/mpcariaso/public_html/php/news-feed.php on line 35
