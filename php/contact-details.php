@@ -17,6 +17,7 @@
             <p>&copy; 2014 Bong Bajo. All rights reserved.</p><br>
             <p>Web Development, Design and Administration By:</p>
             <p>Michael Paolo Cariaso</p>
+            <p>(Sr. Java Developer)</p>
         </div>
     </div>
 </body>
