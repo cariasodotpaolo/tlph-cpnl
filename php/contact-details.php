@@ -12,6 +12,7 @@
             <br>
             <p>Contact us: <br>
                 timelapsephilippines@gmail.com<br>
+                support@timelapsephilippines.com
             </p>
             <br>
             <p>&copy; 2014 Bong Bajo. All rights reserved.</p><br>

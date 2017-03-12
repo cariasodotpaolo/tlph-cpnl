@@ -11,7 +11,8 @@
             <p>&copy; 2014 Bong Bajo. All rights reserved.</p>
             <br>
             <p><strong>Interested in Timelapse Photography?</strong> Contact us:</p>
-            <p>timelapsephilippines@gmail.com</p>
+            <p>timelapsephilippines@gmail.com<br>
+                support@timelapsephilippines.com</p>
             <p>Web Development, Design and Administration By:</p>
             <p>Michael Paolo Cariaso</p>
         </div>
