@@ -1,3 +1,7 @@
-.*
+.git
+.idea/
+.settings/
+.buildpath
+.project
 assets/
 logs/
