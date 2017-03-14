@@ -79,10 +79,10 @@
     /*background: #333;*/
     background: antiquewhite;
     display: block;
-    height: 7px;
+    height: 6px;
     position: relative;
     transition: background .2s ease-out;
-    width: 76px;
+    width: 60px;
     margin: 0 auto;
 }
 
