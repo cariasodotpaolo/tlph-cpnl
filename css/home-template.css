@@ -112,6 +112,10 @@
 }
 
 #footer-wrapper {
+    background: rgba(0,0,0,0.2);
+    background-size: cover;
+    justify-content: center;
+    /*width: 400px;*/
     text-align: center;
     /*border-top: double;*/
     width: 600px;
