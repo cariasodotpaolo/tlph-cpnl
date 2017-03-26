@@ -5,14 +5,14 @@
 	<title>HTML5 / CSS3 Drop-Down Navigation Menu</title>
 	<meta name="description" content="">
 	
-	<link rel="stylesheet" href="/brewingsarcasm/css/nav-menu.css" type="text/css">
+	<link rel="stylesheet" href="css/nav-menu.css" type="text/css">
 	
 	<!-- IE6-8 support of HTML5 elements --> <!--[if lt IE 9]>
 	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
     <script type="text/javascript"
             src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="/brewingsarcasm/js/content.js"></script>
+    <script src="js/content.js"></script>
 </head>
 
 <body>

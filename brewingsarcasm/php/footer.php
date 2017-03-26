@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/brewingsarcasm/css/footer.css" type="text/css">
+    <link rel="stylesheet" href="css/footer.css" type="text/css">
     <title></title>
 </head>
 <body>

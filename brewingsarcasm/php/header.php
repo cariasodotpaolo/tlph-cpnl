@@ -10,7 +10,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/brewingsarcasm/css/header.css" type="text/css">
+    <link rel="stylesheet" href="css/header.css" type="text/css">
     <title></title>
 </head>
 <body>

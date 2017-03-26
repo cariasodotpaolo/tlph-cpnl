@@ -2,10 +2,10 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/brewingsarcasm/css/banner-carousel.css" type="text/css">
+    <link rel="stylesheet" href="css/banner-carousel.css" type="text/css">
     <title></title>
-    <script src="/brewingsarcasm/js/jquery-1.11.3.min.js" type="text/javascript"></script>
-    <script src="/brewingsarcasm/js/jssor.slider-22.2.16.mini.js" type="text/javascript"></script>
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/jssor.slider-22.2.16.mini.js" type="text/javascript"></script>
 </head>
 <script type="text/javascript">
     jQuery(document).ready(function ($) {
@@ -60,67 +60,67 @@
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:900px;height:300px;overflow:hidden;">
 
             <div>
-                <img data-u="image" src="/brewingsarcasm/assets/banner/banner01.jpg" width="900" height="300"/>
+                <img data-u="image" src="assets/banner/banner01.jpg" width="900" height="300"/>
             </div>
             <div>
-                <img data-u="image" src="/brewingsarcasm/assets/banner/banner01.jpg" width="900" height="300" />
+                <img data-u="image" src="assets/banner/banner01.jpg" width="900" height="300" />
             </div>
             <div>
-                <img data-u="image" src="/brewingsarcasm/assets/banner/banner02.jpg" width="900" height="300" />
+                <img data-u="image" src="assets/banner/banner02.jpg" width="900" height="300" />
             </div>
             <div>
-                <img data-u="image" src="/brewingsarcasm/assets/banner/banner03.jpg" width="900" height="300" />
+                <img data-u="image" src="assets/banner/banner03.jpg" width="900" height="300" />
             </div>
             <div>
-                <img data-u="image" src="/brewingsarcasm/assets/banner/banner04.jpg" width="900" height="300" />
+                <img data-u="image" src="assets/banner/banner04.jpg" width="900" height="300" />
             </div>
             <div>
-                <img data-u="image" src="/brewingsarcasm/assets/banner/banner05.jpg" width="900" height="300" />
+                <img data-u="image" src="assets/banner/banner05.jpg" width="900" height="300" />
             </div>
             <div>
-                <img data-u="image" src="/brewingsarcasm/assets/banner/banner06.jpg" width="900" height="300" />
+                <img data-u="image" src="assets/banner/banner06.jpg" width="900" height="300" />
             </div>
             <div>
-                <img data-u="image" src="/brewingsarcasm/assets/banner/banner07.jpg" width="900" height="300" />
+                <img data-u="image" src="assets/banner/banner07.jpg" width="900" height="300" />
             </div>
             <div>
-                <img data-u="image" src="/brewingsarcasm/assets/banner/banner08.jpg" width="900" height="300" />
+                <img data-u="image" src="assets/banner/banner08.jpg" width="900" height="300" />
             </div>
             <div>
-                <img data-u="image" src="/brewingsarcasm/assets/banner/banner09.jpg" width="900" height="300" />
+                <img data-u="image" src="assets/banner/banner09.jpg" width="900" height="300" />
             </div>
             <div>
-                <img data-u="image" src="/brewingsarcasm/assets/banner/banner10.jpg" width="900" height="300" />
+                <img data-u="image" src="assets/banner/banner10.jpg" width="900" height="300" />
             </div>
             <div>
-                <img data-u="image" src="/brewingsarcasm/assets/banner/banner11.jpg" width="900" height="300" />
+                <img data-u="image" src="assets/banner/banner11.jpg" width="900" height="300" />
             </div>
             <div>
-                <img data-u="image" src="/brewingsarcasm/assets/banner/banner08.jpg" width="900" height="300" />
+                <img data-u="image" src="assets/banner/banner08.jpg" width="900" height="300" />
             </div>
             <div>
-                <img data-u="image" src="/brewingsarcasm/assets/banner/banner09.jpg" width="900" height="300" />
+                <img data-u="image" src="assets/banner/banner09.jpg" width="900" height="300" />
             </div>
             <div>
-                <img data-u="image" src="/brewingsarcasm/assets/banner/banner10.jpg" width="900" height="300" />
+                <img data-u="image" src="assets/banner/banner10.jpg" width="900" height="300" />
             </div>
             <div>
-                <img data-u="image" src="/brewingsarcasm/assets/banner/banner11.jpg" width="900" height="300" />
+                <img data-u="image" src="assets/banner/banner11.jpg" width="900" height="300" />
             </div>
             <div>
-                <img data-u="image" src="/brewingsarcasm/assets/banner/banner12.jpg" width="900" height="300" />
+                <img data-u="image" src="assets/banner/banner12.jpg" width="900" height="300" />
             </div>
             <div>
-                <img data-u="image" src="/brewingsarcasm/assets/banner/banner13.jpg" width="900" height="300" />
+                <img data-u="image" src="assets/banner/banner13.jpg" width="900" height="300" />
             </div>
             <div>
-                <img data-u="image" src="/brewingsarcasm/assets/banner/banner14.jpg" width="900" height="300" />
+                <img data-u="image" src="assets/banner/banner14.jpg" width="900" height="300" />
             </div>
             <div>
-                <img data-u="image" src="/brewingsarcasm/assets/banner/banner15.jpg" width="900" height="300" />
+                <img data-u="image" src="assets/banner/banner15.jpg" width="900" height="300" />
             </div>
             <div>
-                <img data-u="image" src="/brewingsarcasm/assets/banner/banner16.jpg" width="900" height="300" />
+                <img data-u="image" src="assets/banner/banner16.jpg" width="900" height="300" />
             </div>
             <a data-u="any" href="http://www.jssor.com" style="display:none">Simple Fade Slideshow</a>
         </div>

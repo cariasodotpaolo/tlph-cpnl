@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/html">
 <head lang="en">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/brewingsarcasm/css/news-feed.css" type="text/css">
+    <link rel="stylesheet" href="css/news-feed.css" type="text/css">
     <title></title>
 </head>
 <body>
