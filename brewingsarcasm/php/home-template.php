@@ -32,7 +32,7 @@
                 </div>
                 <div id="left-menu-content">
                     <a href="http://brewingsarcasm.wordpress.com/2011/04/17/flight/" target="_blank">
-                        <img border="0" alt="Flight" src="/brewingsarcasm/assets/flight.jpg" width="180" height="270" title="Flight">
+                        <img border="0" alt="Flight" src="assets/flight.jpg" width="180" height="270" title="Flight">
                     </a>
                     <p><a class="link-text" href="http://brewingsarcasm.wordpress.com/2017/03/21/me-honey/" target="_blank">Me, Honey</a></p>
                     <p><a class="link-text" href="http://brewingsarcasm.wordpress.com/2011/03/07/an-ode-to-nothing/" target="_blank">An Ode To Nothing</a></p>
@@ -63,7 +63,7 @@
                 <div id="right-menu-content">
 
                     <a href="https://www.flickr.com/photos/50724167@N03/sets/72157650331357665/" target="_blank" >
-                        <img border="0" alt="Boston In Black" src="/brewingsarcasm/assets/boston_in_black.jpg" width="180" height="270" title="Boston In Black">
+                        <img border="0" alt="Boston In Black" src="assets/boston_in_black.jpg" width="180" height="270" title="Boston In Black">
                     </a>
 					<p><a class="link-text" href="https://www.flickr.com/photos/50724167@N03/sets/72157652177929785/" target="_blank">Mt. Pulag: The Dark Mist</a></p>
                     <p><a class="link-text" href="http://www.flickr.com/photos/50724167@N03/sets/72157650331357665/" target="_blank">Boston In Black</a></p>
