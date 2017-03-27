@@ -10,7 +10,7 @@
         <div class="news-item">
             <p><span class="news-title">Me, Honey</span>
             <br>
-            March 21, 2017
+                <span class="courier-span">March 21, 2017</span>
             </p>
             <br>
             <p><span class="section-text">

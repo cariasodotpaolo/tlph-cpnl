@@ -1,50 +1,68 @@
-/* jssor slider bullet navigator skin 05 css */
-/*
-.jssorb05 div           (normal)
-.jssorb05 div:hover     (normal mouseover)
-.jssorb05 .av           (active)
-.jssorb05 .av:hover     (active mouseover)
-.jssorb05 .dn           (mousedown)
-*/
-.jssorb05 {
-    position: absolute;
+.carousel-fade .carousel-inner .item {
+    transition: opacity ease-in-out 2s;
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
 }
-.jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
-    position: absolute;
-    /* size of bullet elment */
-    width: 16px;
-    height: 16px;
-    background: url('img/b05.png') no-repeat;
-    overflow: hidden;
-    cursor: pointer;
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
 }
-.jssorb05 div { background-position: -7px -7px; }
-.jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
-.jssorb05 .av { background-position: -67px -7px; }
-.jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
 
-/* jssor slider arrow navigator skin 12 css */
-/*
-.jssora12l                  (normal)
-.jssora12r                  (normal)
-.jssora12l:hover            (normal mouseover)
-.jssora12r:hover            (normal mouseover)
-.jssora12l.jssora12ldn      (mousedown)
-.jssora12r.jssora12rdn      (mousedown)
-*/
-.jssora12l, .jssora12r {
+.item img {
     display: block;
-    position: absolute;
-    /* size of arrow element */
-    width: 30px;
-    height: 46px;
-    cursor: pointer;
-    background: url('/brewingsarcasm/img/a12.png') no-repeat;
-    overflow: hidden;
+    max-width:900px;
+    max-height:230px;
+    width: auto;
+    height: auto;
+    margin:0 auto;
+    /*width: 900px;
+    height: 230px;*/
 }
-.jssora12l { background-position: -16px -37px; }
-.jssora12r { background-position: -75px -37px; }
-.jssora12l:hover { background-position: -136px -37px; }
-.jssora12r:hover { background-position: -195px -37px; }
-.jssora12l.jssora12ldn { background-position: -256px -37px; }
-.jssora12r.jssora12rdn { background-position: -315px -37px; }
+
+#inner-carousel {
+    margin:0 auto;
+    height: 230px;
+}
+
+/*#banner-carousel-wrapper {
+    !*height: auto;
+    min-height: 390px;*!
+    height: 230px;
+}*/
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}

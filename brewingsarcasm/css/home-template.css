@@ -43,17 +43,11 @@
 }
 
 #banner-wrapper {
-    display: inline-block;
-    width: 100%;
-    height: 200px;
-    display: block;
-    /*margin: 0 auto;*/
+    width: 900px;
+    height: 230px;
     background-color: black;
-    /*background: rgba(0,0,0,0.6);*/
-    margin-top: 10px;
-    margin-bottom: 1px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 5px auto;
+    text-align: center;
 }
 
 #main-content-wrapper {
@@ -95,6 +89,8 @@
 
 #left-menu-content {
     /*color: burlywood;*/
+    font-family: "Courier New", monospace;
+    font-size: 12px;
     text-align: left;
     padding-top: 10px;
 }
@@ -142,6 +138,8 @@
 
 #right-menu-content {
     /*color: burlywood;*/
+    font-family: "Courier New", monospace;
+    font-size: 12px;
     text-align: left;
     padding-top: 10px;
 }
@@ -229,6 +227,11 @@
 .link-text {
     color: black;
     font-weight: bold;
+}
+
+.courier-span {
+    font-family: "Courier New", monospace;
+    font-size: 12px;
 }
 
 /*

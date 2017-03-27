@@ -13,8 +13,6 @@
             interval : 2500
         });
     });
-
-
 </script>
 <body>
     <div id="center-content-wrapper">
