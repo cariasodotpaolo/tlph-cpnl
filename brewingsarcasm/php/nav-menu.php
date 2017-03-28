@@ -20,7 +20,7 @@
         <ul id="navigation">
             <li><a href="javascript:void(0);" onclick="getContent('news-list','php/news-feed.php','center-content')" class="first">Home Brew</a></li>
             <!--<li><a href="javascript:void(0);" onclick="getContent('video-container','/php/video/video-main.php','main-content-wrapper')">PHOTOGRAPHY &raquo;</a>-->
-            <li><a href="#">Photography</a>
+            <li><a href="#">Lomography</a>
                 <ul>
                     <li><a href="http://www.flickr.com/photos/50724167@N03/sets/72157650331357665/" target="_blank">Boston In Black</a></li>
                     <li><a href="http://www.flickr.com/photos/50724167@N03/sets/72157650331816925/" target="_blank">People Are Ppl</a></li>
