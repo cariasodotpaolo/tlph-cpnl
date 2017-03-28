@@ -1,5 +1,5 @@
 .carousel-fade .carousel-inner .item {
-    transition: opacity ease-in-out 2s;
+    transition: opacity ease-in-out 3s;
     opacity: 0;
     -webkit-transition-property: opacity;
     -moz-transition-property: opacity;
@@ -27,8 +27,8 @@
     display: block;
     max-width:900px;
     max-height:230px;
-    width: auto;
-    height: auto;
+    /*width: auto;
+    height: auto;*/
     margin:0 auto;
     /*width: 900px;
     height: 230px;*/

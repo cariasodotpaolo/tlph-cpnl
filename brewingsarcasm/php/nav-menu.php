@@ -18,9 +18,9 @@
 <body>
     <nav class="full-menu-nav">
         <ul id="navigation">
-            <li><a href="javascript:void(0);" onclick="getContent('news-list','/php/news-feed.php','center-content')" class="first">Home Brew</a></li>
+            <li><a href="javascript:void(0);" onclick="getContent('news-list','php/news-feed.php','center-content')" class="first">Home Brew</a></li>
             <!--<li><a href="javascript:void(0);" onclick="getContent('video-container','/php/video/video-main.php','main-content-wrapper')">PHOTOGRAPHY &raquo;</a>-->
-            <li><a href="">Photography</a>
+            <li><a href="#">Photography</a>
                 <ul>
                     <li><a href="http://www.flickr.com/photos/50724167@N03/sets/72157650331357665/" target="_blank">Boston In Black</a></li>
                     <li><a href="http://www.flickr.com/photos/50724167@N03/sets/72157650331816925/" target="_blank">People Are Ppl</a></li>
@@ -28,7 +28,7 @@
                     <li><a href="http://www.flickr.com/photos/50724167@N03/sets/72157649916909548/" target="_blank">When Nature Calls</a></li>
                 </ul>
             </li>
-            <li><a href="#">Poetry</a>
+            <li><a href="#">Bloggery</a>
                 <ul>
                     <li><a href="http://brewingsarcasm.wordpress.com/2017/03/21/me-honey/" target="_blank">Me, Honey</a></li>
                     <li><a href="http://brewingsarcasm.wordpress.com/2011/03/07/an-ode-to-nothing/" target="_blank">An Ode To Nothing</a></li>
@@ -42,9 +42,9 @@
                     <li><a href="http://brewingsarcasm.wordpress.com/2011/03/08/porridge/" target="_blank">Porridge</a></li>
                 </ul>
             </li>
-            <li><a href="javascript:void(0);" onclick="getContent('contact-details','/php/contact-details.php','center-content')" class="last">About</a>
+            <li><a href="javascript:void(0);" onclick="getContent('contact-details','php/contact-details.php','center-content')" class="last">About</a>
                 <ul>
-                    <li><a href="javascript:void(0);" onclick="getContent('contact-details','/php/contact-details.php','center-content')" class="last">Contact</a></li>
+                    <li><a href="javascript:void(0);" onclick="getContent('contact-details','php/contact-details.php','center-content')" class="last">Contact</a></li>
                 </ul>
             </li>
         </ul>

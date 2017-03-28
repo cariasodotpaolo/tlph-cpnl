@@ -10,13 +10,13 @@
 <script type="text/javascript">
     $(document).ready(function(){
         $("#banner-carousel").carousel({
-            interval : 3000
+            interval : 6000
         });
     });
 </script>
 <body>
     <div id="banner-carousel-wrapper">
-        <div id="banner-carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
+        <div id="banner-carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="7000">
             <!--<ol class="carousel-indicators">
                 <li data-target="#banner-carousel" data-slide-to="0" class="active"></li>
                 <li data-target="#banner-carousel" data-slide-to="1"></li>

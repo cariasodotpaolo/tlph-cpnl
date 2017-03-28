@@ -10,11 +10,11 @@
         <br>
         <p><span class="section-text">This site is owned, written and being maintained by yours truly,<br> Michael Paolo Cariaso.</span></p>
         <br>
-        <p class="section-text">I am NOT a hardcore web developer/designer. This is just a hobby.<br>I am a Java middleware (backend) developer by profession.</p>
+        <p class="section-text">I am NOT a hardcore web developer/designer. This is just a hobby.<br>I am a Senior Java Developer by profession.</p>
         <br>
         <p><span class="section-text">For harsh comments and violent reactions please send your email to:</span></p>
         <br>
-        <p><span class="section-text">brewingsarcasm@gmail.com<br>paolo.cariaso@gmail.com</span></p>
+        <p><span class="section-text">mpcariaso@gmail.com<br>brewingsarcasm@gmail.com</span></p>
     </div>
 </body>
 </html>
