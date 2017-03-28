@@ -29,7 +29,7 @@
         </div>-->
         <div id="header-text-wrapper">
             <p><span class="header-title-text">Brewing Sarcasm Since 1976.</span></p>
-            <span class="courier-span">This site is still a work in progress. The developer is always drunk.</span>
+            <span class="courier-span">This page is still a work in progress. The developer is always drunk.</span>
         </div>
         <div id="fb-button-wrapper">
             <div class="fb-like" data-href="http://www.facebook.com/brewingsarcasm" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>

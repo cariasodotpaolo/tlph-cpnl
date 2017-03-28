@@ -27,7 +27,7 @@
         <div id="main-content-wrapper">
             <div id="left-content-wrapper">
                 <div id="left-menu-title">
-                    <span>Scribblings...</span>
+                    <span>Scribblings</span>
                 </div>
                 <div id="left-menu-content">
                     <a href="http://brewingsarcasm.wordpress.com/2011/04/17/flight/" target="_blank">
@@ -49,7 +49,7 @@
 
             <div id="center-content-wrapper">
                     <div id="center-content-title">
-                        <span>Something Must Be Shown Here...</span>
+                        <span>Something Must Be Shown Here</span>
                     </div>
                     <div id="center-content">
                         <?php include 'news-feed.php';?>
@@ -58,7 +58,7 @@
 
             <div id="right-content-wrapper">
                 <div id="right-menu-title">
-                    <span>Lomografia...</span>
+                    <span>Lomografia</span>
                 </div>
                 <div id="right-menu-content">
 
