@@ -12,6 +12,7 @@
         $("#banner-carousel").carousel({
             interval : 5000
         });
+
     });
 </script>
 <body>
@@ -76,48 +77,6 @@
                 <div class="item">
                     <div id="banner17" class="banner-item"></div>
                 </div>
-                <!--<div id="banner01" class="item">
-                    <img src="assets/banner/banner03.jpg">
-                </div>
-                <div id="banner01" class="item">
-                    <img src="assets/banner/banner04.jpg">
-                </div>
-                <div id="banner01" class="item">
-                    <img src="assets/banner/banner05.jpg">
-                </div>
-                <div id="banner01" class="item">
-                    <img src="assets/banner/banner06.jpg">
-                </div>
-                <div id="banner01" class="item">
-                    <img src="assets/banner/banner07.jpg">
-                </div>
-                <div id="banner01" class="item">
-                    <img src="assets/banner/banner08.jpg">
-                </div>
-                <div id="banner01" class="item">
-                    <img src="assets/banner/banner09.jpg">
-                </div>
-                <div id="banner01" class="item">
-                    <img src="assets/banner/banner10.jpg">
-                </div>
-                <div id="banner01" class="item">
-                    <img src="assets/banner/banner11.jpg">
-                </div>
-                <div id="banner01" class="item">
-                    <img src="assets/banner/banner12.jpg">
-                </div>
-                <div id="banner01" class="item">
-                    <img src="assets/banner/banner13.jpg">
-                </div>
-                <div id="banner01" class="item">
-                    <img src="assets/banner/banner14.jpg">
-                </div>
-                <div id="banner01" class="item">
-                    <img src="assets/banner/banner15.jpg">
-                </div>
-                <div id="banner01" class="item">
-                    <img src="assets/banner/banner16.jpg">
-                </div>-->
             </div>
 
             <a class="left carousel-control" href="#banner-carousel" role="button" data-slide="prev">

@@ -1,15 +1,21 @@
 .carousel-fade .carousel-inner .item {
-    /*transition: opacity ease-in-out 3s;*/
-    transition: opacity 1500ms ease;
-    opacity: 0;
+    transition: opacity ease-in-out 2s;
+    opacity: .3;
     -webkit-transition-property: opacity;
     -moz-transition-property: opacity;
     -o-transition-property: opacity;
     transition-property: opacity;
+
+    /*-webkit-transition: 2s ease-in-out opacity;
+    -moz-transition: 2s ease-in-out opacity;
+    -ms-transition: 2s ease-in-out opacity;
+    -o-transition: 2s ease-in-out opacity;
+    transition: 2s ease-in-out opacity;*/
 }
 .carousel-fade .carousel-inner .active {
     opacity: 1;
 }
+
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
     left: 0;
@@ -24,16 +30,16 @@
     z-index: 2;
 }
 
-.item img {
+/*.item img {
     display: block;
     max-width:900px;
     max-height:230px;
-    /*width: auto;
-    height: auto;*/
+    !*width: auto;
+    height: auto;*!
     margin:0 auto;
-    /*width: 900px;
-    height: 230px;*/
-}
+    !*width: 900px;
+    height: 230px;*!
+}*/
 
 #inner-carousel {
     margin:0 auto;
@@ -100,6 +106,16 @@
     background-image: url("../assets/banner/banner17.jpg");
 }
 
+.carousel-control.left .glyphicon {
+    left: 0;
+    margin-left: 0;
+}
+.carousel-control.right .glyphicon {
+    right: 0;
+    margin-right: 0;
+
+}
+
 /*#banner-carousel-wrapper {
     !*height: auto;
     min-height: 390px;*!
@@ -109,6 +125,7 @@
 /*@media all and (transform-3d), (-webkit-transform-3d) {
     .carousel-fade .carousel-inner > .item.next,
     .carousel-fade .carousel-inner > .item.active.right {
+        transition: transform 2s ease-in-out;
         opacity: 0;
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
@@ -118,6 +135,7 @@
         opacity: 0;
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
+        transition: transform 2s ease-in-out;
     }
     .carousel-fade .carousel-inner > .item.next.left,
     .carousel-fade .carousel-inner > .item.prev.right,
@@ -125,5 +143,6 @@
         opacity: 1;
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
+        transition: transform 2s ease-in-out;
     }
 }*/
