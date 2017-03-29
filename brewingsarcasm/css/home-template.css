@@ -45,7 +45,7 @@
 #banner-wrapper {
     width: 900px;
     height: 230px;
-    background-color: black;
+    /*background-color: black;*/
     margin: 5px auto;
     text-align: center;
 }

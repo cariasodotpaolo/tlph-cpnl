@@ -1,5 +1,6 @@
 .carousel-fade .carousel-inner .item {
-    transition: opacity ease-in-out 3s;
+    /*transition: opacity ease-in-out 3s;*/
+    transition: opacity 1500ms ease;
     opacity: 0;
     -webkit-transition-property: opacity;
     -moz-transition-property: opacity;
@@ -39,13 +40,73 @@
     height: 230px;
 }
 
+.banner-item {
+    width: 900px; /*specify width and height to show image*/
+    height: 300px;
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+
+#banner01 {
+    background-image: url("../assets/banner/banner01.jpg");
+}
+
+#banner02 {
+    background-image: url("../assets/banner/banner02.jpg");
+}
+#banner03 {
+    background-image: url("../assets/banner/banner03.jpg");
+}
+#banner04 {
+    background-image: url("../assets/banner/banner04.jpg");
+}
+#banner05 {
+    background-image: url("../assets/banner/banner05.jpg");
+}
+#banner06 {
+    background-image: url("../assets/banner/banner06.jpg");
+}
+#banner07 {
+    background-image: url("../assets/banner/banner07.jpg");
+}
+#banner08 {
+    background-image: url("../assets/banner/banner08.jpg");
+}
+#banner09 {
+    background-image: url("../assets/banner/banner09.jpg");
+}
+#banner10 {
+    background-image: url("../assets/banner/banner10.jpg");
+}
+#banner11 {
+    background-image: url("../assets/banner/banner11.jpg");
+}
+#banner12 {
+    background-image: url("../assets/banner/banner12.jpg");
+}
+#banner13 {
+    background-image: url("../assets/banner/banner13.jpg");
+}
+#banner14 {
+    background-image: url("../assets/banner/banner14.jpg");
+}
+#banner15 {
+    background-image: url("../assets/banner/banner15.jpg");
+}
+#banner16 {
+    background-image: url("../assets/banner/banner16.jpg");
+}
+#banner17 {
+    background-image: url("../assets/banner/banner17.jpg");
+}
+
 /*#banner-carousel-wrapper {
     !*height: auto;
     min-height: 390px;*!
     height: 230px;
 }*/
 
-@media all and (transform-3d), (-webkit-transform-3d) {
+/*@media all and (transform-3d), (-webkit-transform-3d) {
     .carousel-fade .carousel-inner > .item.next,
     .carousel-fade .carousel-inner > .item.active.right {
         opacity: 0;
@@ -65,4 +126,4 @@
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
     }
-}
+}*/

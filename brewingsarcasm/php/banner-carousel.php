@@ -10,13 +10,13 @@
 <script type="text/javascript">
     $(document).ready(function(){
         $("#banner-carousel").carousel({
-            interval : 6000
+            interval : 5000
         });
     });
 </script>
 <body>
     <div id="banner-carousel-wrapper">
-        <div id="banner-carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="7000">
+        <div id="banner-carousel" class="carousel slide carousel-fade" data-ride="carousel">
             <!--<ol class="carousel-indicators">
                 <li data-target="#banner-carousel" data-slide-to="0" class="active"></li>
                 <li data-target="#banner-carousel" data-slide-to="1"></li>
@@ -26,53 +26,98 @@
 
             <div id="inner-carousel" class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img src="assets/banner/banner01.jpg">
+                    <div id="banner01" class="banner-item"></div>
                 </div>
                 <div class="item">
-                    <img src="assets/banner/banner02.jpg">
+                    <div id="banner02" class="banner-item"></div>
                 </div>
                 <div class="item">
+                    <div id="banner03" class="banner-item"></div>
+                </div>
+                <div class="item">
+                    <div id="banner04" class="banner-item"></div>
+                </div>
+                <div class="item">
+                    <div id="banner05" class="banner-item"></div>
+                </div>
+                <div class="item">
+                    <div id="banner06" class="banner-item"></div>
+                </div>
+                <div class="item">
+                    <div id="banner07" class="banner-item"></div>
+                </div>
+                <div class="item">
+                    <div id="banner08" class="banner-item"></div>
+                </div>
+                <div class="item">
+                    <div id="banner09" class="banner-item"></div>
+                </div>
+                <div class="item">
+                    <div id="banner10" class="banner-item"></div>
+                </div>
+                <div class="item">
+                    <div id="banner11" class="banner-item"></div>
+                </div>
+                <div class="item">
+                    <div id="banner12" class="banner-item"></div>
+                </div>
+                <div class="item">
+                    <div id="banner13" class="banner-item"></div>
+                </div>
+                <div class="item">
+                    <div id="banner14" class="banner-item"></div>
+                </div>
+                <div class="item">
+                    <div id="banner15" class="banner-item"></div>
+                </div>
+                <div class="item">
+                    <div id="banner16" class="banner-item"></div>
+                </div>
+                <div class="item">
+                    <div id="banner17" class="banner-item"></div>
+                </div>
+                <!--<div id="banner01" class="item">
                     <img src="assets/banner/banner03.jpg">
                 </div>
-                <div class="item">
+                <div id="banner01" class="item">
                     <img src="assets/banner/banner04.jpg">
                 </div>
-                <div class="item">
+                <div id="banner01" class="item">
                     <img src="assets/banner/banner05.jpg">
                 </div>
-                <div class="item">
+                <div id="banner01" class="item">
                     <img src="assets/banner/banner06.jpg">
                 </div>
-                <div class="item">
+                <div id="banner01" class="item">
                     <img src="assets/banner/banner07.jpg">
                 </div>
-                <div class="item">
+                <div id="banner01" class="item">
                     <img src="assets/banner/banner08.jpg">
                 </div>
-                <div class="item">
+                <div id="banner01" class="item">
                     <img src="assets/banner/banner09.jpg">
                 </div>
-                <div class="item">
+                <div id="banner01" class="item">
                     <img src="assets/banner/banner10.jpg">
                 </div>
-                <div class="item">
+                <div id="banner01" class="item">
                     <img src="assets/banner/banner11.jpg">
                 </div>
-                <div class="item">
+                <div id="banner01" class="item">
                     <img src="assets/banner/banner12.jpg">
                 </div>
-                <div class="item">
+                <div id="banner01" class="item">
                     <img src="assets/banner/banner13.jpg">
                 </div>
-                <div class="item">
+                <div id="banner01" class="item">
                     <img src="assets/banner/banner14.jpg">
                 </div>
-                <div class="item">
+                <div id="banner01" class="item">
                     <img src="assets/banner/banner15.jpg">
                 </div>
-                <div class="item">
+                <div id="banner01" class="item">
                     <img src="assets/banner/banner16.jpg">
-                </div>
+                </div>-->
             </div>
 
             <a class="left carousel-control" href="#banner-carousel" role="button" data-slide="prev">
