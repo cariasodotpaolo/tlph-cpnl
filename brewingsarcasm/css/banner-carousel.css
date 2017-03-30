@@ -1,6 +1,6 @@
 .carousel-fade .carousel-inner .item {
     transition: opacity ease-in-out 2s;
-    opacity: .3;
+    opacity: .2;
     -webkit-transition-property: opacity;
     -moz-transition-property: opacity;
     -o-transition-property: opacity;
