@@ -20,8 +20,6 @@
             <div id="banner-wrapper">
                 <?php include 'banner-carousel.php';?>
             </div>
-
-
         </div>
 
         <div id="main-content-wrapper">
