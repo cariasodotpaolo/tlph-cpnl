@@ -1,11 +1,12 @@
 #banner-carousel-wrapper {
     background-color: black;
-    float: left;
+    /*float: left;*/
+    margin: 0 auto;
 }
 
-/*#banner-carousel {
-
-}*/
+#banner-carousel {
+    margin: 0 auto;
+}
 
 .carousel-fade .carousel-inner .item {
     transition: opacity ease-in-out 2s;
@@ -57,7 +58,7 @@
 
 .banner-item {
     width: 650px; /*specify width and height to show image*/
-    height: 866px;
+    height: 900px;
     background-repeat:no-repeat;
     background-size:contain;
 }

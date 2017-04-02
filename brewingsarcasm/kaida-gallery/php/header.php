@@ -30,17 +30,11 @@
         </div>
         <div id="header-text-wrapper">
             <!--<p>
-                <span class="tangerine-cursive">KAIDA</span>
-            </p>
-            <p>
-                <span>Contemporary</span>
-            </p>-->
-            <p>
                 <span class="tangerine-cursive">Art</span>
             </p>
             <p>
                 <span class="tangerine-cursive">Gallery</span>
-            </p>
+            </p>-->
         </div>
         <!--<div id="fb-button-wrapper">
             <div class="fb-like" data-href="http://www.facebook.com/brewingsarcasm" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>

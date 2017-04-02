@@ -14,15 +14,14 @@
             <div id="header-wrapper">
                 <?php include 'header.php';?>
             </div>
-
-            <div id="banner-wrapper">
-                <?php include 'banner-carousel.php';?>
-
-            </div>
-
             <div id="main-menu-wrapper">
                 <?php include 'nav-menu-responsive.php';?>
             </div>
+            <div id="banner-wrapper">
+                <?php include 'banner-carousel.php';?>
+            </div>
+
+
         </div>
 
         <div id="main-content-wrapper">
