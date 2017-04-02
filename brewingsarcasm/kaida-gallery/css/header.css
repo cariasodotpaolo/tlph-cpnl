@@ -1,0 +1,49 @@
+#icon-image-wrapper {
+    display: block;
+    /*position: relative;*/
+    left: 0;
+    vertical-align:top; /*added*/
+    float: left;
+    width: 200px;
+    height: 150px;
+    /*padding-top: 5px;
+    padding-left: 5px;*/
+    /*margin-top: 5px;
+    margin-left: 5px;*/
+    margin:0 auto;
+}
+
+#icon-image {
+    width: 200px;
+    height: 150px;
+    background-image: url("../assets/kaida.jpg");
+    background-repeat:no-repeat;
+    background-size:contain;
+    margin:0 auto;
+    float:left;
+}
+
+#header-text-wrapper {
+    display: block;
+    /*background-color: #0C91EC;*/
+    /*position: relative;*/
+    /*vertical-align: middle;*/ /*added*/
+    /*margin:0 auto;*/
+    float: left;
+    width: 200px;
+    height: inherit;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    margin: 0 auto;
+}
+
+#fb-button-wrapper {
+    /*background-color: #257AB6;*/
+    vertical-align: right;
+    float: right;
+    text-align: right;
+    height: inherit;
+    width: 200px;
+    padding-top: 10px;
+}

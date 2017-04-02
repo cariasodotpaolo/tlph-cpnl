@@ -1,0 +1,226 @@
+/* header */
+
+.header-menu {
+    /*background-color: #fff;*/
+    /*box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);*/
+    /*position: fixed;*/
+    width: 200px;
+    /*z-index: 3;*/
+    margin:0 auto;
+    /*padding-left: 30px;*/
+}
+
+.header-menu ul {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    /*background-color: #fff;*/
+    float: left;
+    width: 100%;
+    /*text-align: right;*/
+}
+
+.header-menu li {
+    display: inline;
+    width: 50%;
+}
+
+.header-menu li a {
+    color: #c9c9c9; /*text color*/
+    /*background: rgba(0,0,0,0.6);*/
+    /*background-color: black;*/
+    display: block;
+    padding: 30px 30px;
+    /*border-right: 1px solid #f4f4f4;*/
+    text-decoration: none;
+    font-size: 16px;
+    text-align: right;
+}
+
+.header-menu li a:hover,
+.header-menu .menu-btn:hover {
+    /*background-color: #f4f4f4;*/
+    background-color: #c9c9c9;
+    color: black;
+}
+
+/*.header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+}*/
+
+/* menu */
+
+.header-menu .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    text-align: left;
+
+}
+
+/* menu icon */
+
+.header-menu .menu-icon {
+    /*background: rgba(0,0,0,0.4);*/
+    cursor: pointer;
+    display: inline-block;
+    /*float: right;*/
+    /*padding: 40px 20px;*/
+    padding-top: 46px;
+    position: relative;
+    user-select: none;
+    width: 100px;
+    height: 100px;
+
+}
+
+.header-menu .menu-icon .navicon {
+    /*background: #333;*/
+    background: dimgray;
+    display: block;
+    height: 6px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 60px;
+    margin: 0 auto;
+}
+
+.header-menu .menu-icon .navicon:before,
+.header-menu .menu-icon .navicon:after {
+    /*background: #333;*/
+    background: dimgray;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.header-menu .menu-icon .navicon:before {
+    top: 20px;
+}
+
+.header-menu .menu-icon .navicon:after {
+    top: -20px;
+}
+
+/* menu btn */
+
+.header-menu .menu-btn {
+    display: none;
+}
+
+.header-menu .menu-btn:checked ~ .menu {
+    /*max-height: 240px;*/
+    max-height: 900px;
+}
+
+.header-menu .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+
+.header-menu .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.header-menu .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.header-menu .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header-menu .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+/* 48em = 768px */
+/* this will remove burger menu from 1100px and larger */
+@media (min-width: 1100px) {
+
+    .header-menu {
+        display: block;
+    }
+
+    /*.header-menu ul {
+        display: none;
+    }*/
+
+    /*.header li {
+        float: left;
+    }*/
+    .header-menu li a {
+        padding: 20px 30px;
+    }
+    .header-menu .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .header-menu .menu-icon {
+        display: none;
+    }
+
+    #header-menu-wrapper {
+        height: 60px;
+    }
+}
+
+/* mobile */
+@media (max-width: 1100px) {
+
+    #header-menu-wrapper {
+        height: 80px;
+    }
+
+    .header-menu {
+        /*position: fixed;*/
+        z-index: 3;
+        margin: 0 auto;
+        float: left;
+    }
+
+    .header-menu .menu {
+        text-align: left;
+    }
+
+    .header-menu ul {
+        float: left;
+        width: 200px;
+        text-align: left;
+    }
+
+    .header-menu li a {
+        font-size: 36px;
+        font-weight: 500;
+        color: dimgray;
+        padding: 15px 0;
+        text-align: left; /* aligns menu text */
+    }
+
+    .header-menu .menu-icon {
+        width: 120px;
+        height: 120px;
+        padding-top: 36px;
+    }
+
+    .header-menu .menu-icon .navicon:before {
+        top: 15px;
+    }
+
+    .header-menu .menu-icon .navicon:after {
+        top: -15px;
+    }
+
+    .header-menu .menu-icon .navicon {
+        height: 6px;
+        width: 50px;
+    }
+}
+
+
+

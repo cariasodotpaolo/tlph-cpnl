@@ -1,0 +1,12 @@
+#news-list {
+    padding-top: 10px;
+}
+
+.news-item{
+    padding-top: 10px;
+   /* border-top: ridge;*/
+    width: inherit;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: left;
+}
