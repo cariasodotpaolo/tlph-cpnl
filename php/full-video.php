@@ -10,8 +10,8 @@
         <div id="full-video-content">
             <p><span class="section-title">Projects</span></p><br>
 
-            <iframe width="1180" height="664" src="https://www.youtube.com/embed/DvnAWc0vt6E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            
+            <iframe width="900" height="360" src="https://www.youtube.com/embed/DvnAWc0vt6E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
             <?php
             $string = file_get_contents("../data/menu-full-video.json");
             $json_a = json_decode($string, true);
