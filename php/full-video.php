@@ -19,8 +19,10 @@
                     $imageFile = $video_a['imageFile'];
                     $title = $video_a['title'];
 
-                    echo '<p><a id="video-link" href="#" onclick="popUpVideo(\'' .$title .'\',\''. $videoUrl . '\')">';
-                    echo '<img id="video-image" width="600" height="240" src="../assets/splash/' . $imageFile . '"/></a></p>';
+                    // echo '<p><a id="video-link" href="#" onclick="popUpVideo(\'' .$title .'\',\''. $videoUrl . '\')">';
+                    // echo '<img id="video-image" width="600" height="240" src="../assets/splash/' . $imageFile . '"/></a></p>';
+
+                    echo '<iframe width="600" height="240" src="'. $videoUrl . ''" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
                 }
             ?>
         </div>
