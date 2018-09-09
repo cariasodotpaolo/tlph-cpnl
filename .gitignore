@@ -5,3 +5,4 @@
 .project
 assets/
 logs/
+.DS_Store
