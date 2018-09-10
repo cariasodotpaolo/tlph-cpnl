@@ -5,5 +5,5 @@
 .project
 assets/
 logs/
-dbconfig/
+php/dbconfig/
 .DS_Store
