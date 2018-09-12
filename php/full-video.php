@@ -19,50 +19,6 @@ require_once "dbconfig/dbconfig.php";
               echo "Oops! Something went wrong. Please try again later.";
         }
 
-        // if($stmt = $mysqli->prepare($sql)){
-        //
-        //     // Attempt to execute the prepared statement
-        //     if($stmt->execute()){
-        //         // Store result
-        //         $stmt->store_result();
-        //
-        //         // Check if username exists, if yes then verify password
-        //         if($stmt->num_rows > 0){
-        //             // Bind result variables
-        //             $stmt->bind_result($title, $videoUrl, $position);
-        //             if($stmt->fetch()){
-        //                 if(password_verify($password, $hashed_password)){
-        //                     // Password is correct, so start a new session
-        //                     session_start();
-        //
-        //                     // Store data in session variables
-        //                     $_SESSION["loggedin"] = true;
-        //                     $_SESSION["id"] = $id;
-        //                     $_SESSION["username"] = $username;
-        //
-        //                     // Redirect user to welcome page
-        //                     header("location: login/welcome.php");
-        //                 } else{
-        //                     // Display an error message if password is not valid
-        //                     $password_err = "The password you entered was not valid.";
-        //                 }
-        //             }
-        //         } else{
-        //             // Display an error message if username doesn't exist
-        //             $username_err = "No account found with that username.";
-        //         }
-        //     } else{
-        //         echo "Oops! Something went wrong. Please try again later.";
-        //     }
-        //     }
-        //
-        //     // Close statement
-        //     $stmt->close();
-        // }
-        //
-        // // Close connection
-        // $mysqli->close();
-    }
 ?>
 
 <!DOCTYPE html>
@@ -77,7 +33,7 @@ require_once "dbconfig/dbconfig.php";
         <div id="full-video-content">
             <p><span class="section-title">Projects</span></p><br>
 
-            <!-- <?php
+            <?php
             // $string = file_get_contents("../data/menu-full-video.json");
             // $json_a = json_decode($string, true);
             // $i = 0;
@@ -91,8 +47,6 @@ require_once "dbconfig/dbconfig.php";
             //
             //         echo '<iframe width="600" height="240" src="'. $videoUrl . '" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
             //     }
-            ?> -->
-            <?php
                 while ($stmt->fetch()) {
                     echo '<iframe width="600" height="240" src="'. $videoUrl . '" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
                 }
