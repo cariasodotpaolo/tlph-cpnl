@@ -3,7 +3,7 @@
 // Include config file
 require_once "dbconfig/dbconfig.php";
 
-        $sql = "SELECT title, video_url FROM project videos order by position asc";
+        $sql = "SELECT title, video_url FROM project_videos order by position asc";
 
         $result = $myslqi->query($sql);
 
