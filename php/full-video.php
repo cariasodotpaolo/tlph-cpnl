@@ -74,19 +74,19 @@ require_once "dbconfig/dbconfig.php";
             <p><span class="section-title">Projects</span></p><br>
 
             <!-- <?php
-            $string = file_get_contents("../data/menu-full-video.json");
-            $json_a = json_decode($string, true);
-            $i = 0;
-                foreach ($json_a as $videos => $video_a) {
-                    $videoUrl = $video_a['videoUrl'];
-                    $imageFile = $video_a['imageFile'];
-                    $title = $video_a['title'];
-
-                    // echo '<p><a id="video-link" href="#" onclick="popUpVideo(\'' .$title .'\',\''. $videoUrl . '\')">';
-                    // echo '<img id="video-image" width="600" height="240" src="../assets/splash/' . $imageFile . '"/></a></p>';
-
-                    echo '<iframe width="600" height="240" src="'. $videoUrl . '" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
-                }
+            // $string = file_get_contents("../data/menu-full-video.json");
+            // $json_a = json_decode($string, true);
+            // $i = 0;
+            //     foreach ($json_a as $videos => $video_a) {
+            //         $videoUrl = $video_a['videoUrl'];
+            //         $imageFile = $video_a['imageFile'];
+            //         $title = $video_a['title'];
+            //
+            //         // echo '<p><a id="video-link" href="#" onclick="popUpVideo(\'' .$title .'\',\''. $videoUrl . '\')">';
+            //         // echo '<img id="video-image" width="600" height="240" src="../assets/splash/' . $imageFile . '"/></a></p>';
+            //
+            //         echo '<iframe width="600" height="240" src="'. $videoUrl . '" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+            //     }
             ?> -->
             <?php
                 foreach($result->fetch()) {
