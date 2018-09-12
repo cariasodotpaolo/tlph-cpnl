@@ -9,8 +9,9 @@ require_once "dbconfig/dbconfig.php";
 
         if($stmt->execute()){
             $stmt->store_result();
+            $count = $stmt->num_rows;
 
-            if($stmt->num_rows > 0){
+            if($count > 0){
                 $stmt->bind_result($title, $videoUrl, $imageFile);
             } else {
               echo "No carousel videos found.";
@@ -58,7 +59,7 @@ require_once "dbconfig/dbconfig.php";
                     //     $i++;
                     // }
                     $i = 0;
-                    while ($stmt->fetch()) {
+                    while ($i <= $count) {
 
                         if ($i == 0) {
                             echo '<li data-target="#myCarousel" data-slide-to="'. $i . '" class="active"></li>';
