@@ -5,15 +5,19 @@ require_once "dbconfig/dbconfig.php";
 
         $sql = "SELECT title, video_url FROM project_videos order by position asc";
 
-        $result = $myslqi->query($sql);
+        $stmt = $mysqli->prepare($sql);
 
-        if ($result->num_rows == 0) {
-            echo "Oops! Something went wrong. Please try again later.";
-        } else {
-          $result->bind_result($title, $videoUrl);
+        if($stmt->execute()){
+            $stmt->store_result();
+
+            if($stmt->num_rows > 0){
+                $stmt->bind_result($title, $videoUrl, $position);
+            } else {
+              echo "No project videos found.";
+            }
+        } else{
+              echo "Oops! Something went wrong. Please try again later.";
         }
-
-        $mysqli->close();
 
         // if($stmt = $mysqli->prepare($sql)){
         //
@@ -89,9 +93,12 @@ require_once "dbconfig/dbconfig.php";
             //     }
             ?> -->
             <?php
-                foreach($result->fetch()) {
+                foreach($stmt->fetch()) {
                     echo '<iframe width="600" height="240" src="'. $videoUrl . '" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
                 }
+
+                $stmt->close();
+                $mysqli->close();
             ?>
         </div>
     </div>
