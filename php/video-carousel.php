@@ -1,3 +1,26 @@
+<?php
+
+// Include config file
+require_once "dbconfig/dbconfig.php";
+
+        $sql = "SELECT title, video_url, image_file FROM carousel_videos order by position asc";
+
+        $stmt = $mysqli->prepare($sql);
+
+        if($stmt->execute()){
+            $stmt->store_result();
+
+            if($stmt->num_rows > 0){
+                $stmt->bind_result($title, $videoUrl, $imageFile);
+            } else {
+              echo "No carousel videos found.";
+            }
+        } else{
+              echo "Oops! Something went wrong. Please try again later.";
+        }
+
+?>
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html">
 <head lang="en">
@@ -21,45 +44,73 @@
             <!-- Indicators -->
             <ol class="carousel-indicators">
                 <?php
-                $string = file_get_contents("../data/video-newsfeed.json");
-                $json_a = json_decode($string, true);
+                    // $string = file_get_contents("../data/video-newsfeed.json");
+                    // $json_a = json_decode($string, true);
+                    //
+                    // $i = 0;
+                    // foreach ($json_a as $videos => $video_a) {
+                    //
+                    //     if ($i == 0) {
+                    //         echo '<li data-target="#myCarousel" data-slide-to="'. $i . '" class="active"></li>';
+                    //     } else {
+                    //         echo '<li data-target="#myCarousel" data-slide-to="' . $i . '"></li>';
+                    //     }
+                    //     $i++;
+                    // }
+                    $i = 0;
+                    while ($stmt->fetch()) {
 
-                $i = 0;
-                foreach ($json_a as $videos => $video_a) {
-
-                    if ($i == 0) {
-                        echo '<li data-target="#myCarousel" data-slide-to="'. $i . '" class="active"></li>';
-                    } else {
-                        echo '<li data-target="#myCarousel" data-slide-to="' . $i . '"></li>';
+                        if ($i == 0) {
+                            echo '<li data-target="#myCarousel" data-slide-to="'. $i . '" class="active"></li>';
+                        } else {
+                            echo '<li data-target="#myCarousel" data-slide-to="' . $i . '"></li>';
+                        }
+                        $i++;
                     }
-                    $i++;
-                }
                 ?>
             </ol>
 
             <!-- Wrapper for slides -->
             <div id="inner-carousel" class="carousel-inner" role="listbox">
                 <?php
-                $string = file_get_contents("../data/video-newsfeed.json");
-                $json_a = json_decode($string, true);
-                $i = 0;
-                foreach ($json_a as $videos => $video_a) {
-                    $videoUrl = $video_a['videoUrl'];
-                    $imageFile = $video_a['imageFile'];
-                    $title = $video_a['title'];
+                    // $string = file_get_contents("../data/video-newsfeed.json");
+                    // $json_a = json_decode($string, true);
+                    // $i = 0;
+                    // foreach ($json_a as $videos => $video_a) {
+                    //     $videoUrl = $video_a['videoUrl'];
+                    //     $imageFile = $video_a['imageFile'];
+                    //     $title = $video_a['title'];
+                    //
+                    //     if($i == 0) {
+                    //         echo '<div class="item active">';
+                    //     } else {
+                    //         echo '<div class="item">';
+                    //     }
+                    //
+                    //     echo '<a id="video-link" href="#" onclick="popUpVideo(\'' .$title .'\',\''. $videoUrl . '\')">';
+                    //     echo '<img id="video-image" width="600" height="240" src="../assets/splash/' . $imageFile . '"/></a>';
+                    //     echo '</div>';
+                    //
+                    //     $i++;
+                    // }
+                    $i = 0;
+                    while ($stmt->fetch()) {
+                        if($i == 0) {
+                            echo '<div class="item active">';
+                        } else {
+                            echo '<div class="item">';
+                        }
 
-                    if($i == 0) {
-                        echo '<div class="item active">';
-                    } else {
-                        echo '<div class="item">';
+                        echo '<a id="video-link" href="#" onclick="popUpVideo(\'' .$title .'\',\''. $videoUrl . '\')">';
+                        echo '<img id="video-image" width="600" height="240" src="../assets/splash/' . $imageFile . '"/></a>';
+                        echo '</div>';
+
+                        $i++;
                     }
 
-                    echo '<a id="video-link" href="#" onclick="popUpVideo(\'' .$title .'\',\''. $videoUrl . '\')">';
-                    echo '<img id="video-image" width="600" height="240" src="../assets/splash/' . $imageFile . '"/></a>';
-                    echo '</div>';
-
-                    $i++;
-                }
+                    $stmt->free_result();
+                    $stmt->close();
+                    $mysqli->close();
                 ?>
             </div>
 
