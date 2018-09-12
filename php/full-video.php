@@ -11,7 +11,7 @@ require_once "dbconfig/dbconfig.php";
             $stmt->store_result();
 
             if($stmt->num_rows > 0){
-                $stmt->bind_result($title, $videoUrl, $position);
+                $stmt->bind_result($title, $videoUrl);
             } else {
               echo "No project videos found.";
             }
@@ -93,10 +93,11 @@ require_once "dbconfig/dbconfig.php";
             //     }
             ?> -->
             <?php
-                foreach($stmt->fetch()) {
+                while ($stmt->fetch()) {
                     echo '<iframe width="600" height="240" src="'. $videoUrl . '" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
                 }
 
+                $stmt->free_result();
                 $stmt->close();
                 $mysqli->close();
             ?>
