@@ -1,0 +1,30 @@
+[
+    {
+        "id": "N",
+        "level": "Native"
+    },
+    {
+        "id": "C1",
+        "level": "C1:Beginner"
+    },
+    {
+        "id": "C2",
+        "level": "C2:Elementary"
+    },
+    {
+        "id": "B1",
+        "level": "B1:Pre-intermediate"
+    },
+    {
+        "id": "B2",
+        "level": "B2:Intermediate"
+    },
+    {
+        "id": "A1",
+        "level": "A1:Upper-Intermediate"
+    },
+    {
+        "id": "A2",
+        "level": "A2:Advanced"
+    }
+]
