@@ -5,7 +5,20 @@ require_once "dbconfig/dbconfig.php";
 
         $sql = "SELECT id, title, video_url, position FROM project_videos order by position asc";
 
-        $result = $mysqli->query($sql);
+        $stmt = $mysqli->prepare($sql);
+
+        if($stmt->execute()){
+            $stmt->store_result();
+
+            if($stmt->num_rows > 0){
+                $stmt->bind_result($id, $title, $videoUrl, $position);
+            } else {
+              echo "No project videos found.";
+            }
+        } else{
+              echo "Oops! Something went wrong. Please try again later.";
+        }
+
         //$sth = mysqli_query($sql);
         //$rows = array();
         // while($r = mysqli_fetch_assoc($sth)) {
@@ -14,8 +27,6 @@ require_once "dbconfig/dbconfig.php";
         //echo "<p>video data</p>";
         //echo "<div> " . json_encode($rows) . "</div";
         //$jsonData = json_encode($rows);
-
-
 
 ?>
 
@@ -31,21 +42,17 @@ require_once "dbconfig/dbconfig.php";
   <div class="container">
 
     <?php
-        echo "<p>project-video-data.php</p>";
+        echo '<p>project-video-data.php</p>';
         //echo "<p>" . $jsonData . "</p>";
 
-        while($row = $result->fetch_array())
-        {
-          $rows[] = $row;
+        while ($stmt->fetch()) {
+            echo '<p>'. $videoUrl . '" </p>';
         }
 
-        foreach($rows as $row)
-        {
-          echo "<p>" . $row['video_url'] . "</p>";
-        }
-
-        $result->close();
+        $stmt->free_result();
+        $stmt->close();
         $mysqli->close();
+
     ?>
   </div>
 </body>
