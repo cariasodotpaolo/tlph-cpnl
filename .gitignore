@@ -6,4 +6,5 @@
 assets/
 logs/
 php/dbconfig/
+coolchange/php/dbconfig/
 .DS_Store
