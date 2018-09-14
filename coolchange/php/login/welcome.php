@@ -31,7 +31,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   </div>
     <div>
         <?php
-            include '../coolc-template.php';
+            include '../data/project-video-data.php';
+            //include '../coolc-template.php';
         ?>
     </div>
 </body>

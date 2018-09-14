@@ -28,7 +28,7 @@
         ?>
     </div>
     <div>
-      <?php require_once 'data/project-video-data.php' ?>
+      <?php include 'data/project-video-data.php' ?>
     </div>
   </div>
 </body>
