@@ -10,8 +10,8 @@ require_once "dbconfig/dbconfig.php";
         while($r = mysqli_fetch_assoc($sth)) {
             $rows[] = $r;
         }
-
-        print json_encode($rows);
+        echo "<p>video data</p>";
+        echo "<div> " . json_encode($rows) . "</div";
 
         $mysqli->close();
 
