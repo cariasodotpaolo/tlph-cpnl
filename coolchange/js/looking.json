@@ -1,0 +1,14 @@
+[
+    {
+        "id": 0,
+        "role": "Partners"
+    },
+    {
+        "id": 1,
+        "role": "Teachers"
+    },
+    {
+        "id": 2,
+        "role": "Tutors"
+    }
+]
