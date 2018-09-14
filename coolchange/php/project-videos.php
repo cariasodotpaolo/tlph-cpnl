@@ -72,9 +72,6 @@
       </div>
     </div>
   </div>
-  <div>
-    <?php include 'data/project-video-data.php' ?>
-  </div>
 </body>
 
 </html>
