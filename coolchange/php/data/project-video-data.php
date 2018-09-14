@@ -11,7 +11,7 @@ require_once "dbconfig/dbconfig.php";
             $rows[] = $r;
         }
 
-        print json_encode($rows);
+        echo json_encode($rows);
 
         $mysqli->close();
 
