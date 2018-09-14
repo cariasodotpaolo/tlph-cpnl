@@ -19,7 +19,7 @@ $(document).ready(function() {
     width: '200px',
     cache: true,
     ajax: {
-      url: '../json/language.json',
+      url: '/json/language.json',
       dataType: 'json',
       quietMillis: 100,
       results: function(data) {
@@ -49,7 +49,7 @@ $(document).ready(function() {
     width: '200px',
     cache: true,
     ajax: {
-      url: '../json/level.json',
+      url: '/json/level.json',
       dataType: 'json',
       quietMillis: 100,
       results: function(data) {
@@ -73,7 +73,7 @@ $(document).ready(function() {
     multiple: true,
     cache: true,
     ajax: {
-      url: '../json/looking.json',
+      url: '/json/looking.json',
       dataType: 'json',
       quietMillis: 100,
       results: function(data) {
