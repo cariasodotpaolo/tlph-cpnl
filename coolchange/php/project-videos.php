@@ -4,7 +4,7 @@
 <head lang="en">
   <meta charset="utf-8" />
   <title>Timelpase Philippines</title>
-  <script type="text/javascript" src="../js/coolc.js"></script>
+  <!-- <script type="text/javascript" src="../../js/coolc.js"></script> -->
 </head>
 
 <body>
