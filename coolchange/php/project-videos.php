@@ -4,6 +4,7 @@
 <head lang="en">
   <meta charset="utf-8" />
   <title>Project Videos</title>
+  <script type="text/javascript" src="../js/coolc.js"></script>
 </head>
 
 <body>
