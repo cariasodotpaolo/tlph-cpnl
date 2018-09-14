@@ -55,7 +55,7 @@
     </div>
     <div class="row voffset2">
       <div class="col-xs-12">
-        <table id="langTable" data-toggle="table" data-url="tabledata.json" data-sort-name="native" data-sort-order="desc" data-cache="false">
+        <table id="langTable" data-toggle="table" data-url="json/tabledata.json" data-sort-name="native" data-sort-order="desc" data-cache="false">
           <thead>
             <tr>
               <th data-field="id">id</th>
