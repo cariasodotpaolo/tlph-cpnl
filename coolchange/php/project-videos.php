@@ -3,13 +3,13 @@
 
 <head lang="en">
   <meta charset="utf-8" />
-  <title>Project Videos</title>
+  <title>Timelpase Philippines</title>
   <script type="text/javascript" src="../js/coolc.js"></script>
 </head>
 
 <body>
   <div class="container">
-    <h2>Bootstrap table supporting add/edit data operation</h2>
+    <h2>Content Dashboard</h2>
     <div class="row voffset2">
       <div class="col-xs-12">
         <button class="btn btn-default btn-primary" id="addAction">
