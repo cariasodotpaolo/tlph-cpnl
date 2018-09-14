@@ -22,7 +22,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <body>
     <div>
         <?php
-            include "../project-videos.php";
+            include '../coolc-template.php';
         ?>
     </div>
     <div class="page-header">
