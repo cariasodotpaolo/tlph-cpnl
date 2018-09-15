@@ -7,6 +7,24 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: login/login.php");
     exit;
 }
+
+require_once "dbconfig/dbconfig.php";
+
+        $sql = "SELECT id, title, video_url, position FROM project_videos order by position asc";
+
+        $stmt = $mysqli->prepare($sql);
+
+        if($stmt->execute()) {
+            $stmt->store_result();
+
+            if($stmt->num_rows > 0){
+                $stmt->bind_result($id, $title, $videoUrl, $position);
+            } else {
+              echo "No project videos found.";
+            }
+        } else {
+              echo "Oops! Something went wrong. Please try again later.";
+        }
 ?>
 
 <!DOCTYPE html>
@@ -27,8 +45,19 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
           </div>
           <div>
               <?php
-                  echo "<p>welcome.php</p>";
-                  include '/php/data/project-video-data.php';
+              
+                  echo '<p>project-video-data.php</p>';
+                  //echo "<p>" . $jsonData . "</p>";
+
+                  while ($stmt->fetch()) {
+                      echo '<p>'. $videoUrl . '</p>';
+                  }
+
+                  $stmt->free_result();
+                  $stmt->close();
+                  $mysqli->close();
+
+                  //include '/php/data/project-video-data.php';
                   //include '../coolc-template.php';
               ?>
           </div>
