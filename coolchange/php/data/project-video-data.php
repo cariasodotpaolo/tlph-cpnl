@@ -7,7 +7,7 @@ require_once "dbconfig/dbconfig.php";
 
         $stmt = $mysqli->prepare($sql);
 
-        if($stmt->execute()){
+        if($stmt->execute()) {
             $stmt->store_result();
 
             if($stmt->num_rows > 0){
@@ -15,46 +15,35 @@ require_once "dbconfig/dbconfig.php";
             } else {
               echo "No project videos found.";
             }
-        } else{
+        } else {
               echo "Oops! Something went wrong. Please try again later.";
         }
-
-        //$sth = mysqli_query($sql);
-        //$rows = array();
-        // while($r = mysqli_fetch_assoc($sth)) {
-        //     $rows[] = $r;
-        // }
-        //echo "<p>video data</p>";
-        //echo "<div> " . json_encode($rows) . "</div";
-        //$jsonData = json_encode($rows);
-
 ?>
 
 <!DOCTYPE html>
 <html>
-<head lang="en">
-  <meta charset="utf-8" />
-  <title>Timelpase Philippines</title>
-  <!-- <script type="text/javascript" src="../../js/coolc.js"></script> -->
-</head>
+    <head lang="en">
+      <meta charset="utf-8" />
+      <title>Timelpase Philippines</title>
+      <!-- <script type="text/javascript" src="../../js/coolc.js"></script> -->
+    </head>
 
-<body>
-  <div class="container">
-    <div>
-      <?php
-          echo '<p>project-video-data.php</p>';
-          //echo "<p>" . $jsonData . "</p>";
+    <body>
 
-          while ($stmt->fetch()) {
-              echo '<p>'. $videoUrl . '</p>';
-          }
+        <div>
+          <?php
+              echo '<p>project-video-data.php</p>';
+              //echo "<p>" . $jsonData . "</p>";
 
-          $stmt->free_result();
-          $stmt->close();
-          $mysqli->close();
-      ?>
-    </div>
-  </div>
-</body>
+              while ($stmt->fetch()) {
+                  echo '<p>'. $videoUrl . '</p>';
+              }
 
+              $stmt->free_result();
+              $stmt->close();
+              $mysqli->close();
+          ?>
+        </div>
+      
+    </body>
 </html>

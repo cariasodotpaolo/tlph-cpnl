@@ -1,6 +1,6 @@
 <?php
 // Initialize the session
-session_start();
+//session_start();
 
 // Check if the user is logged in, if not then redirect him to login page
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
@@ -23,12 +23,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
           <div class="page-header">
               <h3>Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b></h3>
               <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
-              <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
+              <a href="logout.php" class="btn btn-danger">Sign Out Of Dashboard</a>
           </div>
           <div>
               <?php
                   echo "<p>welcome.php</p>";
-                  include 'data/project-video-data.php';
+                  include '/php/data/project-video-data.php';
                   //include '../coolc-template.php';
               ?>
           </div>
