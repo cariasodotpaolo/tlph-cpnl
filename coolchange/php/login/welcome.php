@@ -45,12 +45,12 @@ require_once "dbconfig/dbconfig.php";
           </div>
           <div>
               <?php
-              
-                  echo '<p>project-video-data.php</p>';
+
+                  //echo '<p>project-video-data.php</p>';
                   //echo "<p>" . $jsonData . "</p>";
 
                   while ($stmt->fetch()) {
-                      echo '<p>'. $videoUrl . '</p>';
+                      echo '<p>' . $videoUrl . '</p>';
                   }
 
                   $stmt->free_result();
