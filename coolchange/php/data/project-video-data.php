@@ -40,20 +40,20 @@ require_once "dbconfig/dbconfig.php";
 
 <body>
   <div class="container">
+    <div>
+      <?php
+          echo '<p>project-video-data.php</p>';
+          //echo "<p>" . $jsonData . "</p>";
 
-    <?php
-        echo '<p>project-video-data.php</p>';
-        //echo "<p>" . $jsonData . "</p>";
+          while ($stmt->fetch()) {
+              echo '<p>'. $videoUrl . '</p>';
+          }
 
-        while ($stmt->fetch()) {
-            echo '<p>'. $videoUrl . '" </p>';
-        }
-
-        $stmt->free_result();
-        $stmt->close();
-        $mysqli->close();
-
-    ?>
+          $stmt->free_result();
+          $stmt->close();
+          $mysqli->close();
+      ?>
+    </div>
   </div>
 </body>
 
