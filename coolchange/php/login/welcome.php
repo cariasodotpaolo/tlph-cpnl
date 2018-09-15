@@ -50,7 +50,7 @@ require_once "dbconfig/dbconfig.php";
                   //echo "<p>" . $jsonData . "</p>";
 
                   while ($stmt->fetch()) {
-                      echo '<p>' . $videoUrl . '</p>';
+                      echo '<p>' . $title . '</p>';
                   }
 
                   $stmt->free_result();
