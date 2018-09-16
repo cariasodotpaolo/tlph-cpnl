@@ -8,17 +8,17 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     exit;
 }
 
-require_once "dbconfig/dbconfig.php";
+//require_once "dbconfig/dbconfig.php";
 
-        $sql = "SELECT id, title, video_url, position FROM project_videos order by position asc";
+        $sql2 = "SELECT id, title, video_url, position FROM project_videos order by position asc";
 
-        $stmt = $mysqli->prepare($sql);
+        $stmt2 = $mysqli->prepare($sql2);
 
-        if($stmt->execute()) {
-            $stmt->store_result();
+        if($stmt2->execute()) {
+            $stmt2->store_result();
 
-            if($stmt->num_rows > 0){
-                $stmt->bind_result($id, $title, $videoUrl, $position);
+            if($stmt2->num_rows > 0){
+                $stmt2->bind_result($id, $title, $videoUrl, $position);
             } else {
               echo "No project videos found.";
             }
@@ -53,9 +53,9 @@ require_once "dbconfig/dbconfig.php";
                       echo '<p>' . $title . '</p>';
                   }
 
-                  $stmt->free_result();
-                  $stmt->close();
-                  $mysqli->close();
+                  // $stmt->free_result();
+                  // $stmt->close();
+                  // $mysqli->close();
 
                   //include '/php/data/project-video-data.php';
                   //include '../coolc-template.php';
