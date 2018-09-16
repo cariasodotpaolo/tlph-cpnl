@@ -49,12 +49,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                   //echo '<p>project-video-data.php</p>';
                   //echo "<p>" . $jsonData . "</p>";
 
-                  while ($stmt->fetch()) {
+                  while ($stmt2->fetch()) {
                       echo '<p>' . $title . '</p>';
                   }
 
-                  // $stmt->free_result();
-                  // $stmt->close();
+                  $stmt2->free_result();
+                  $stmt2->close();
                   // $mysqli->close();
 
                   //include '/php/data/project-video-data.php';
