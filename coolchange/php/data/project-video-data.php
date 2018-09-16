@@ -1,5 +1,12 @@
 <?php
+// Initialize the session
+session_start();
 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: login/login.php");
+    exit;
+}
 // Include config file
 require_once "dbconfig/dbconfig.php";
 
@@ -32,7 +39,7 @@ require_once "dbconfig/dbconfig.php";
 
         <div>
           <?php
-              echo '<p>project-video-data.php</p>';
+              //echo '<p>project-video-data.php</p>';
               //echo "<p>" . $jsonData . "</p>";
 
               while ($stmt->fetch()) {
@@ -44,6 +51,6 @@ require_once "dbconfig/dbconfig.php";
               $mysqli->close();
           ?>
         </div>
-      
+
     </body>
 </html>
