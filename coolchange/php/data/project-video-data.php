@@ -3,16 +3,16 @@
 session_start();
 
 // Check if the user is logged in, if not then redirect him to login page
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     header("location: login/login.php");
     exit;
 }
 // Include config file
-require_once "dbconfig/dbconfig.php";
+require_once "../dbconfig/dbconfig.php";
 
-        //$sql = "SELECT id, title, video_url, position FROM project_videos order by position asc";
+        $sql = "SELECT id, title, video_url, position FROM project_videos order by position asc";
 
-        $stmt = $mysqli->prepare("SELECT id, title, video_url, position FROM project_videos order by position asc");
+        $stmt = $mysqli->prepare($sql);
 
         if($stmt->execute()) {
             $stmt->store_result();
@@ -36,7 +36,6 @@ require_once "dbconfig/dbconfig.php";
     </head>
 
     <body>
-
         <div>
           <?php
               //echo '<p>project-video-data.php</p>';
@@ -46,9 +45,10 @@ require_once "dbconfig/dbconfig.php";
                   echo '<p>' . $title . '</p>';
               }
 
-              //$stmt->free_result();
+              $stmt->free_result();
               $stmt->close();
               $mysqli->close();
+
           ?>
         </div>
 
