@@ -10,9 +10,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 // Include config file
 require_once "dbconfig/dbconfig.php";
 
-        $sql = "SELECT id, title, video_url, position FROM project_videos order by position asc";
+        //$sql = "SELECT id, title, video_url, position FROM project_videos order by position asc";
 
-        $stmt = $mysqli->prepare($sql);
+        $stmt = $mysqli->prepare("SELECT id, title, video_url, position FROM project_videos order by position asc");
 
         if($stmt->execute()) {
             $stmt->store_result();
@@ -46,7 +46,7 @@ require_once "dbconfig/dbconfig.php";
                   echo '<p>' . $title . '</p>';
               }
 
-              $stmt->free_result();
+              //$stmt->free_result();
               $stmt->close();
               $mysqli->close();
           ?>
