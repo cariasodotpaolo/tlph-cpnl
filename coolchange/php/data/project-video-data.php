@@ -25,9 +25,23 @@ require_once "../dbconfig/dbconfig.php";
         } else {
               echo "Oops! Something went wrong. Please try again later.";
         }
+
+        $myArray = array();
+        // while ($stmt->fetch()) {
+        //     echo '<p>' . $title . '</p>';
+        // }
+
+        while($row = $stmt->fetch_array(MYSQL_ASSOC)) {
+            $myArray[] = $row;
+        }
+        echo json_encode($myArray);
+
+        $stmt->free_result();
+        $stmt->close();
+        $mysqli->close();
 ?>
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <head lang="en">
       <meta charset="utf-8" />
@@ -53,4 +67,4 @@ require_once "../dbconfig/dbconfig.php";
         </div>
 
     </body>
-</html>
+</html> -->
