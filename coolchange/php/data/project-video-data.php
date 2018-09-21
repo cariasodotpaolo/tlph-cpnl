@@ -70,6 +70,8 @@ require_once "../dbconfig/dbconfig.php";
           <div>
             <?php
 
+            echo $jsonData;
+
             foreach ($jsonData as $videos => $video_a) {
                 $id = $video_a['id'];
                 $videoUrl = $video_a['videoUrl'];
