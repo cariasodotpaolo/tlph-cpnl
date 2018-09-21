@@ -12,25 +12,39 @@ require_once "../dbconfig/dbconfig.php";
 
         $sql = "SELECT id, title, video_url, position FROM project_videos order by position asc";
 
-        $stmt = $mysqli->prepare($sql);
+        $myArray = array();
+        if ($result = $mysqli->query($sql)) {
 
-        if($stmt->execute()) {
-            $stmt->store_result();
-
-            if($stmt->num_rows > 0){
-                $stmt->bind_result($id, $title, $videoUrl, $position);
-            } else {
-              echo "No project videos found.";
+            while($row = $result->fetch_array(MYSQL_ASSOC)) {
+                    $myArray[] = $row;
             }
-        } else {
-              echo "Oops! Something went wrong. Please try again later.";
+            //echo json_encode($myArray);
+
+            $jsonData = json_encode($myArray);
         }
 
-        $videoArray = array();
+        $result->close();
+        $mysqli->close();
 
-        while($row = $stmt->fetch_array()) {
-            $videoArray[] = $row;
-        }
+        // $stmt = $mysqli->prepare($sql);
+        //
+        // if($stmt->execute()) {
+        //     $stmt->store_result();
+        //
+        //     if($stmt->num_rows > 0){
+        //         $stmt->bind_result($id, $title, $videoUrl, $position);
+        //     } else {
+        //       echo "No project videos found.";
+        //     }
+        // } else {
+        //       echo "Oops! Something went wrong. Please try again later.";
+        // }
+        //
+        // $videoArray = array();
+        //
+        // while($row = $stmt->fetch()) {
+        //     $videoArray[] = $row;
+        // }
 
         //header('Content-Type: application/json');
         //echo json_encode($myArray);
@@ -56,13 +70,13 @@ require_once "../dbconfig/dbconfig.php";
           <div>
             <?php
 
-            while($stmt->fetch()) {
-              echo '<p>DB: ' . $title . '</p>';
-            }
-
-            // foreach ($videoArray => $videoRow) {
-            //   echo '<p>ARRAY: ' . $videoRow['videoUrl'] . '</p>';
+            // while($stmt->fetch()) {
+            //   echo '<p>DB: ' . $title . '</p>';
             // }
+
+            foreach ($videoArray => $videoRow) {
+              echo '<p>ARRAY: ' . $videoRow['videoUrl'] . '</p>';
+            }
 
             // foreach ($jsonData as $videos => $video_a) {
             //     $id = $video_a['id'];
@@ -74,9 +88,9 @@ require_once "../dbconfig/dbconfig.php";
             //
             // }
 
-            $stmt->free_result();
-            $stmt->close();
-            $mysqli->close();
+            // $stmt->free_result();
+            // $stmt->close();
+            // $mysqli->close();
 
             ?>
           </div>
