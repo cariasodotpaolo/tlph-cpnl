@@ -60,9 +60,9 @@ require_once "../dbconfig/dbconfig.php";
               echo '<p>DB: ' . $title . '</p>';
             }
 
-            foreach ($videoArray => $videoRow) {
-              echo '<p>ARRAY: ' . $videoRow['videoUrl'] . '</p>';
-            }
+            // foreach ($videoArray => $videoRow) {
+            //   echo '<p>ARRAY: ' . $videoRow['videoUrl'] . '</p>';
+            // }
 
             // foreach ($jsonData as $videos => $video_a) {
             //     $id = $video_a['id'];
