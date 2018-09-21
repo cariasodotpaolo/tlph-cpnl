@@ -37,9 +37,9 @@ require_once "../dbconfig/dbconfig.php";
 
         $jsonData = json_encode($myArray);
 
-        $stmt->free_result();
-        $stmt->close();
-        $mysqli->close();
+        // $stmt->free_result();
+        // $stmt->close();
+        // $mysqli->close();
 ?>
 
 <!DOCTYPE html>
@@ -56,6 +56,10 @@ require_once "../dbconfig/dbconfig.php";
           <div>
             <?php
 
+            while($stmt->fetch()) {
+              echo '<p>DB: ' . $title . '</p>';
+            }
+
             foreach ($jsonData as $videos => $video_a) {
                 $id = $video_a['id'];
                 $videoUrl = $video_a['videoUrl'];
@@ -65,7 +69,12 @@ require_once "../dbconfig/dbconfig.php";
                 echo '<p>' . $title . '</p>';
 
             }
-              ?>
+
+            $stmt->free_result();
+            $stmt->close();
+            $mysqli->close();
+
+            ?>
           </div>
     </body>
 </html>
