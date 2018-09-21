@@ -76,7 +76,7 @@
               <th data-field="id">id</th>
               <th data-field="title">Title</th>
               <!-- <th data-field="native" data-formatter="formatNativeItem" data-align="center">Native</th> -->
-              <th data-field="videoUrl">Video URL</th>
+              <th data-field="video_url">Video URL</th>
               <th data-field="position">Position</th>
               <!-- <th data-field="operate" data-formatter="operateFormatter" data-align="center" data-events="operateEvents" data-width="100"></th> -->
             </tr>

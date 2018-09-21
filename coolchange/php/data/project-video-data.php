@@ -18,9 +18,11 @@ require_once "../dbconfig/dbconfig.php";
             while($row = $result->fetch_array(MYSQL_ASSOC)) {
                     $myArray[] = $row;
             }
-            //echo json_encode($myArray);
 
-            $jsonData = json_encode($myArray);
+            header('Content-Type: application/json');
+            echo json_encode($myArray);
+
+            //$jsonData = json_encode($myArray);
         }
 
         $result->close();
@@ -56,7 +58,7 @@ require_once "../dbconfig/dbconfig.php";
         // $mysqli->close();
 ?>
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -70,21 +72,21 @@ require_once "../dbconfig/dbconfig.php";
           <div>
             <?php
 
-            echo $jsonData;
-
-            $jsonData_arr = json_decode($jsonData, true);
-
-            foreach ($jsonData_arr as $videos => $video_row) {
-                $id = $video_row['id'];
-                $videoUrl = $video_row['video_url'];
-                $title = $video_row['title'];
-                $position = $video_row['position'];
-
-                echo '<p>' . $id . '_' . $title . '</p>';
-
-            }
+            // echo $jsonData;
+            //
+            // $jsonData_arr = json_decode($jsonData, true);
+            //
+            // foreach ($jsonData_arr as $videos => $video_row) {
+            //     $id = $video_row['id'];
+            //     $videoUrl = $video_row['video_url'];
+            //     $title = $video_row['title'];
+            //     $position = $video_row['position'];
+            //
+            //     echo '<p>' . $id . '_' . $title . '</p>';
+            //
+            // }
 
             ?>
           </div>
     </body>
-</html>
+</html> -->
