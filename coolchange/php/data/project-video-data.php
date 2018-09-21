@@ -72,13 +72,15 @@ require_once "../dbconfig/dbconfig.php";
 
             echo $jsonData;
 
-            foreach ($jsonData as $videos => $video_a) {
-                $id = $video_a['id'];
-                $videoUrl = $video_a['video_url'];
-                $title = $video_a['title'];
-                $position = $video_a['position'];
+            $jsonData_arr = json_decode($jsonData, true);
 
-                echo '<p>' . $id . ': ' . $title . '</p>';
+            foreach ($jsonData_arr as $videos => $video_row) {
+                $id = $video_row['id'];
+                $videoUrl = $video_row['video_url'];
+                $title = $video_row['title'];
+                $position = $video_row['position'];
+
+                echo '<p>' . $id . '_' . $title . '</p>';
 
             }
 
