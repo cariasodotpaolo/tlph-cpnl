@@ -70,27 +70,15 @@ require_once "../dbconfig/dbconfig.php";
           <div>
             <?php
 
-            // while($stmt->fetch()) {
-            //   echo '<p>DB: ' . $title . '</p>';
-            // }
-            echo $jsonData;  
-            // foreach ($videoArray => $videoRow) {
-            //   echo '<p>ARRAY: ' . $videoRow['videoUrl'] . '</p>';
-            // }
+            foreach ($jsonData as $videos => $video_a) {
+                $id = $video_a['id'];
+                $videoUrl = $video_a['videoUrl'];
+                $title = $video_a['title'];
+                $position = $video_a['position'];
 
-            // foreach ($jsonData as $videos => $video_a) {
-            //     $id = $video_a['id'];
-            //     $videoUrl = $video_a['videoUrl'];
-            //     $title = $video_a['title'];
-            //     $position = $video_a['position'];
-            //
-            //     echo '<p>' . $id . ': ' . $title . '</p>';
-            //
-            // }
+                echo '<p>' . $id . ': ' . $title . '</p>';
 
-            // $stmt->free_result();
-            // $stmt->close();
-            // $mysqli->close();
+            }
 
             ?>
           </div>
