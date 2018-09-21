@@ -74,7 +74,7 @@ require_once "../dbconfig/dbconfig.php";
 
             foreach ($jsonData as $videos => $video_a) {
                 $id = $video_a['id'];
-                $videoUrl = $video_a['videoUrl'];
+                $videoUrl = $video_a['video_url'];
                 $title = $video_a['title'];
                 $position = $video_a['position'];
 
