@@ -73,10 +73,10 @@ require_once "../dbconfig/dbconfig.php";
             // while($stmt->fetch()) {
             //   echo '<p>DB: ' . $title . '</p>';
             // }
-
-            foreach ($videoArray => $videoRow) {
-              echo '<p>ARRAY: ' . $videoRow['videoUrl'] . '</p>';
-            }
+            echo $jsonData;  
+            // foreach ($videoArray => $videoRow) {
+            //   echo '<p>ARRAY: ' . $videoRow['videoUrl'] . '</p>';
+            // }
 
             // foreach ($jsonData as $videos => $video_a) {
             //     $id = $video_a['id'];
