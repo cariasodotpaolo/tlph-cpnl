@@ -27,7 +27,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
           </div>
           <div>
               <!-- <a href="../project-videos.php" class="btn btn-warning">Edit Project Videos</a> -->
-              <?php include 'project-video-data.php'; ?>
+              <?php include '../data/project-video-data.php'; ?>
           </div>
     </body>
 </html>
