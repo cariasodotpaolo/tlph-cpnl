@@ -27,16 +27,45 @@ require_once "../dbconfig/dbconfig.php";
         }
 
         $myArray = array();
-        // while ($stmt->fetch()) {
-        //     echo '<p>' . $title . '</p>';
-        // }
 
-        while($row = $stmt->fetch_array(MYSQL_ASSOC)) {
+        while($row = $stmt->fetch_array()) {
             $myArray[] = $row;
         }
-        print json_encode($myArray);
+
+        //header('Content-Type: application/json');
+        //echo json_encode($myArray);
+
+        $jsonData = json_encode($myArray);
 
         $stmt->free_result();
         $stmt->close();
         $mysqli->close();
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Welcome</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+        <style type="text/css">
+            body{ font: 14px sans-serif; text-align: center; }
+        </style>
+    </head>
+    <body>
+          <div>
+            <?php
+
+            foreach ($jsonData as $videos => $video_a) {
+                $id = $video_a['id'];
+                $videoUrl = $video_a['videoUrl'];
+                $title = $video_a['title'];
+                $title = $video_a['position'];
+
+                echo '<p>' . $title . '</p>';
+
+            }
+              ?>
+          </div>
+    </body>
+</html>
