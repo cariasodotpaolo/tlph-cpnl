@@ -26,11 +26,11 @@ require_once "../dbconfig/dbconfig.php";
               echo "Oops! Something went wrong. Please try again later.";
         }
 
-        $myArray = array();
+        $videoArray = array();
 
-        // while($row = $stmt->fetch_array()) {
-        //     $myArray[] = $row;
-        // }
+        while($row = $stmt->fetch_array()) {
+            $videoArray[] = $row;
+        }
 
         //header('Content-Type: application/json');
         //echo json_encode($myArray);
@@ -58,6 +58,10 @@ require_once "../dbconfig/dbconfig.php";
 
             while($stmt->fetch()) {
               echo '<p>DB: ' . $title . '</p>';
+            }
+
+            foreach ($videoArray => $videoRow) {
+              echo '<p>ARRAY: ' . $videoRow['videoUrl'] . '</p>';
             }
 
             // foreach ($jsonData as $videos => $video_a) {
