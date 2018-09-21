@@ -28,14 +28,14 @@ require_once "../dbconfig/dbconfig.php";
 
         $myArray = array();
 
-        while($row = $stmt->fetch_array()) {
-            $myArray[] = $row;
-        }
+        // while($row = $stmt->fetch_array()) {
+        //     $myArray[] = $row;
+        // }
 
         //header('Content-Type: application/json');
         //echo json_encode($myArray);
 
-        $jsonData = json_encode($myArray);
+        //$jsonData = json_encode($myArray);
 
         // $stmt->free_result();
         // $stmt->close();
@@ -60,15 +60,15 @@ require_once "../dbconfig/dbconfig.php";
               echo '<p>DB: ' . $title . '</p>';
             }
 
-            foreach ($jsonData as $videos => $video_a) {
-                $id = $video_a['id'];
-                $videoUrl = $video_a['videoUrl'];
-                $title = $video_a['title'];
-                $title = $video_a['position'];
-
-                echo '<p>' . $title . '</p>';
-
-            }
+            // foreach ($jsonData as $videos => $video_a) {
+            //     $id = $video_a['id'];
+            //     $videoUrl = $video_a['videoUrl'];
+            //     $title = $video_a['title'];
+            //     $position = $video_a['position'];
+            //
+            //     echo '<p>' . $id . ': ' . $title . '</p>';
+            //
+            // }
 
             $stmt->free_result();
             $stmt->close();
