@@ -28,7 +28,7 @@
     <div class="row voffset2">
       <div class="col-xs-12">
         <button class="btn btn-default btn-primary" id="addAction">
-          <i class="fa fa-plus-circle" style="margin-right:5px;"></i>Add language
+          <i class="fa fa-plus-circle" style="margin-right:5px;"></i>Add Video
         </button>
       </div>
     </div>
@@ -39,19 +39,19 @@
             <form id="languageForm" role="form">
               <fieldset>
                 <div class="form-group col-xs-12 col-sm-3">
-                  <label for="language" class="control-label" style="display: block;">Language</label>
+                  <label for="language" class="control-label" style="display: block;">Title</label>
                   <input type="text" name="language" id="language" >
                 </div>
                 <div class="form-group col-xs-12 col-sm-2">
-                  <label for="native" class="control-label" style="display: block;">Native</label>
+                  <label for="native" class="control-label" style="display: block;">Active</label>
                   <input type="checkbox" id="native" name="native">
                 </div>
                 <div class="form-group col-xs-12 col-sm-3">
-                  <label for="level" class="control-label" style="display: block;">Level</label>
+                  <label for="level" class="control-label" style="display: block;">Video URL</label>
                   <input type="text" name="level" id="level">
                 </div>
                 <div class="form-group col-xs-12 col-sm-4">
-                  <label for="lookingFor" class="control-label" style="display: block;">Looking for</label>
+                  <label for="lookingFor" class="control-label" style="display: block;">Position</label>
                   <input type="text" name="lookingFor" id="lookingFor">
                 </div>
                 <div class="col-xs-12 col-md-4 col-md-offset-8">
